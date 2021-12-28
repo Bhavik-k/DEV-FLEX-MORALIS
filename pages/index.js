@@ -15,7 +15,7 @@ export default function Home() {
   // ```
   // i guess that should work
   const router = useRouter()
-  const { user, setUserData, authenticate, logout, isAuthenticated } = useMoralis();
+  const { user, setUserData, authenticate, logout, isAuthenticated, isAuthenticating } = useMoralis();
 
   const [namanake, setnamanake] = useState('');
   const [PP, setPP] = useState('');
@@ -160,7 +160,7 @@ export default function Home() {
 
         </div> : <div onClick={authenticate}
         className='mx-auto px-10 py-3 w-max flex text-xl justify-center items-center border-blue-500 text-blue-500 font-semibold border  rounded-full shadow-md hover:scale-105 hover:shadow-lg duration-200 cursor-pointer'
-        >Log in</div>}
+        >{isAuthenticating? <h1 className='flex '>Loading <img className='h-5 my-auto ml-2' src='loading5.gif'></img></h1> :"Log in"}</div>}
         
       </main>
         {/* <div onClick={send}>
