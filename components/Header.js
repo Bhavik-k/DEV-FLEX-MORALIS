@@ -7,7 +7,7 @@ function Header() {
             
             {/* <img className="md:h-20 h-14"
                 src="Logo.jpg"/> */}
-            <img className="h-16" src="/transparentLogo.png"/>
+            <img className="h-16 shadow-black drop-shadow-sm" src="transparentLogo as Smart Object-1 - Copy.png"/>
             <h1 className="md:ml-5 text-4xl font-semibold my-auto ml-3">DevFlex</h1>
             
             
